@@ -1,0 +1,102 @@
+.offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.port {
+    width: 60%;
+    text-align: center;
+}
+.first {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 80px;
+    color: black;
+    justify-content: space-between;
+    
+}
+.paragraphs {
+    display: flex;
+    gap: 24px;
+    
+}
+
+.paragraphs p:last-child {
+    margin-right: 55px;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg,#ac907d, #333333);
+    width: 100%;
+    height: 300px;
+}
+.name{
+    text-align: center;
+}
+.intro {
+    margin-top: 4px;
+    text-align: center;
+}
+.hero-btn{
+    background-color: orange;
+}
+
+.offer {
+    text-align: center;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+.services {
+    display: flex;
+    justify-content: center;
+}
+.web-icon {
+    text-align: center;
+    width: 250px;
+}
+.code {
+    text-align: center;
+    width: 250px;
+}
+.search-icon {
+    text-align: center;
+    width: 250px;
+}
+i {
+    font-size: 40px;
+}
+.offertitle {
+    font-size: 2rem;
+}
+.line {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 70px;
+}
+.contact {
+    text-align: center;
+    margin-top: 50px;
+} 
+.contact i {
+    font-size: 20px;
+}
+FOOTER {
+    text-align: center;
+}
+.social-media {
+    text-align: center;
+}
+.whole {
+    border: black solid 2px;
+}
