@@ -1,12 +1,238 @@
-.offer {
+
+/* General Reset and Box Sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #fafafa;
+    color: #222;
+    line-height: 1.5;
+}
+
+.whole {
+    border: rgb(234, 225, 225) solid 20px;
+}
+
+header {
+    width: 100%;
+}
+
+.first {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 80px;
+    padding: 0 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.port {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.paragraphs {
+    display: flex;
+    gap: 20px;
+}
+
+.paragraphs p {
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.paragraphs p:hover {
+    color: orange;
+}
+
+.hero {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(135deg,#ac907d, #333333);
+    width: 100%;
+    min-height: 300px;
+    padding: 32px 16px;
+    color: #fff;
     text-align: center;
 }
 
-.port {
+.name h1 {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+}
+
+.intro {
+    margin-top: 4px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.hero-btn {
+    background-color: orange;
+    color: #fff;
+    border: none;
+    padding: 10px 28px;
+    border-radius: 24px;
+    font-size: 1rem;
+    margin-top: 18px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.hero-btn:hover {
+    background: #ff8800;
+}
+
+.offer {
+    text-align: center;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background: #fff;
+    margin: 24px 0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.offertitle {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 24px 0;
+}
+
+.web-icon, .code, .search-icon {
+    text-align: center;
+    width: 250px;
+    border: solid rgb(168, 150, 150) 2px;
+    height: 200px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.web-icon:hover, .code:hover, .search-icon:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 6px 24px rgba(0,0,0,0.10);
+    border-color: orange;
+}
+
+i {
+    font-size: 40px;
+    color: orange;
+    margin-bottom: 12px;
+    margin-top: 20px;
+}
+
+.line {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 70px;
+}
+
+.contact {
+    text-align: center;
+    margin-top: 50px;
+}
+.contact i {
+    font-size: 32px;
+    color: orange;
+}
+
+FOOTER, .social-media {
+    text-align: center;
+    margin-top: 32px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .first {
+        flex-direction: column;
+        height: auto;
+        gap: 12px;
+        padding: 12px 0;
+    }
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+    .web-icon, .code, .search-icon {
+        width: 90%;
+        margin: 12px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .first {
+        flex-direction: column;
+        height: auto;
+        gap: 8px;
+        padding: 8px 0;
+    }
+    .port {
+        font-size: 1.3rem;
+        width: 100%;
+    }
+    .paragraphs {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .hero {
+        min-height: 180px;
+        padding: 16px 4px;
+    }
+    .name h1 {
+        font-size: 1.3rem;
+    }
+    .intro {
+        font-size: 1rem;
+    }
+    .offer {
+        font-size: 1.1rem;
+        min-height: 60px;
+        margin: 12px 0;
+    }
+    .offertitle {
+        font-size: 1.2rem;
+    }
+    .services {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+    .web-icon, .code, .search-icon {
+        width: 98%;
+        height: auto;
+        min-height: 120px;
+        margin: 8px 0;
+    }
+    i {
+        font-size: 28px;
+    }
+    .contact {
+        margin-top: 24px;
+    }
+}
+
+/* .port {
     width: 60%;
     text-align: center;
 }
@@ -111,4 +337,4 @@ FOOTER {
 i {
     color: orange;
     margin-top: 20px;
-}
+} */
