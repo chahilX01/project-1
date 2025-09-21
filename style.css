@@ -64,14 +64,22 @@
 .web-icon {
     text-align: center;
     width: 250px;
+    border: solid rgb(168, 150, 150) 2px;
+    height: 200px;
 }
 .code {
     text-align: center;
     width: 250px;
+    border: solid rgb(168, 150, 150) 2px;
+    height: 200px;
+    margin-left: 20px;
 }
 .search-icon {
     text-align: center;
     width: 250px;
+     border: solid rgb(168, 150, 150) 2px;
+    height: 200px;
+    margin-left: 20px;
 }
 i {
     font-size: 40px;
@@ -98,5 +106,9 @@ FOOTER {
     text-align: center;
 }
 .whole {
-    border: black solid 2px;
+    border: rgb(234, 225, 225) solid 20px;
+}
+i {
+    color: orange;
+    margin-top: 20px;
 }
